@@ -102,8 +102,8 @@ new = pd.concat( (sym_data['Curr_High_Low'],sym_data['Curr_High_Prev_Low'],sym_d
 sym_data ['True_Range'] = np.max(new,axis=1)
 sym_data ['Average_True_Range'] = sym_data ['True_Range'].rolling(14).mean()
 
-print(sym_data)
-
+#print(sym_data)
+#Plot price and ATR data
 fig, (ax1, ax2) = plt.subplots(2,1)
 ax1.get_xaxis().set_visible(False)
 fig.suptitle(symbol.upper())
